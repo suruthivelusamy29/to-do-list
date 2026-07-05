@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="splash_bg">#F9FAEC</color>
+
+        <color name="bg_main">#121212</color> <!-- Dark background -->
+
+
+
+    <color name="colorPrimary">#FF9800</color>
+    <color name="colorPrimaryVariant">#F57C00</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#FFEB3B</color>
+    <color name="colorOnSecondary">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="workTask">#FF6B6B</color>
+    <color name="healthTask">#4CAF50</color>
+    <color name="personalTask">#6EC6FF</color>
+    <color name="shopTask">#FFC93C</color>
+
+</resources>

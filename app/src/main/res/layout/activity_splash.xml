@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAEC"
+
+    android:padding="32dp">
+
+    <!-- Container for logo and texts -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            android:layout_marginBottom="24dp"
+            android:contentDescription="App Logo"/>
+
+        <TextView
+            android:text="Your day, your plan!"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="Make every day productive.\nStart by creating your first task."
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginBottom="0dp"
+            android:layout_width="wrap_content"
+            android:layout_margin="10sp"
+            android:fontFamily="Roboto"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Button at bottom with some margin -->
+    <Button
+        android:id="@+id/btnGetStarted"
+        android:text="GET STARTED"
+        android:textSize="20sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:paddingStart="70dp"
+        android:paddingEnd="70dp"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="30dp"/>
+
+
+
+</LinearLayout>

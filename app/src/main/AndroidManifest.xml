@@ -1,0 +1,97 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.todo">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="My ToDo App"
+        android:theme="@style/Theme.Todo">
+
+        <!-- Splash Screen Activity (Launcher) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Todo.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="My ToDo App" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.facebook.sdk.ClientToken" android:value="@string/facebook_client_token"/>
+
+        <!-- Home / Task Manager Activity -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+
+        <!-- Other Screens -->
+        <activity
+            android:name=".SignUpActivity" />
+
+        <activity
+            android:name=".ForgotPasswordActivity" />
+
+        <!-- Add Task Page -->
+        <activity
+            android:name=".AddTaskActivity"
+            android:exported="true" />
+
+        <!-- Task Detail Page -->
+        <activity
+            android:name=".TaskDetailActivity"
+            android:exported="true" />
+        <activity android:name=".SettingsActivity" />
+
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".AppPreferencesActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".FeedbackActivity" />
+
+
+
+
+        <!--<provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider123456789012345"
+            android:exported="false"/>-->
+
+
+
+
+
+
+
+
+
+
+
+    </application>
+
+</manifest>

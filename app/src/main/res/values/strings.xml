@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My ToDo App</string>
+
+    <string name="facebook_app_id">883369344019222</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">7c21557eae907931e14db391d9a5e676</string>
+
+        <string name="app_logo_desc">App Logo</string>
+        <string name="splash_title">Your day, your plan!</string>
+        <string name="splash_subtitle">Make every day productive.\nStart by creating your first task.</string>
+        <string name="btn_get_started">GET STARTED</string>
+
+
+
+
+
+</resources>
